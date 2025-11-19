@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="800.0" style="-fx-background-color: rgb(51,51,51); -fx-background-radius: 25px; -fx-border-width: 2px; -fx-border-color: rgb(45,45,45); -fx-border-radius: 25px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="148.0" fitWidth="148.0" layoutX="338.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="CreateServer" layoutX="200.0" layoutY="280.0" mnemonicParsing="false" opacity="0.5" prefHeight="100.0" prefWidth="137.0" style="-fx-background-color: #584fc2;" text="Сервер" textFill="#373737">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="CreateClient" layoutX="486.0" layoutY="280.0" mnemonicParsing="false" opacity="0.5" prefHeight="100.0" prefWidth="138.0" style="-fx-background-color: #49ac62;" text="Клиент" textFill="#373737">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="380.0" layoutY="320.0" text="Создать" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="MenuMove" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: rgb(40,40,40);" />
+      <Button fx:id="CloseMenu" layoutX="751.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #cc0605;" text="x">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="MenuTCenter" layoutX="347.0" prefHeight="50.0" prefWidth="131.0" text="Messager" textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5088105642848078" centerY="0.5757575757575758" radius="0.8394495675323206">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.14155685901641846" green="0.08249512314796448" blue="0.9684210419654846" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.282967032967033">
+                     <color>
+                        <Color red="0.1225568950176239" green="0.11159999668598175" blue="0.6200000047683716" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07672514766454697" green="0.1291539967060089" blue="0.8631578683853149" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="MenuRoll" layoutX="708.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: orange; -fx-background-radius: 25px;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="MenuRollT" layoutX="718.0" layoutY="6.0" prefHeight="30.0" prefWidth="12.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
